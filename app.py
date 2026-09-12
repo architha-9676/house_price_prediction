@@ -197,7 +197,7 @@ with tab1:
 with tab2:
     st.subheader("📊 Exploratory Data Analysis")
     if os.path.exists('plots/eda_dashboard.png'):
-        st.image('plots/eda_dashboard.png', use_column_width=True)
+        st.image('plots/eda_dashboard.png', use_container_width=True)
     else:
         st.info("Run `python model.py` to generate plots.")
 
@@ -219,7 +219,7 @@ with tab2:
 with tab3:
     st.subheader("📈 Model Performance")
     if os.path.exists('plots/model_performance.png'):
-        st.image('plots/model_performance.png', use_column_width=True)
+        st.image('plots/model_performance.png', use_container_width=True)
     else:
         st.info("Run `python model.py` to generate plots.")
 
